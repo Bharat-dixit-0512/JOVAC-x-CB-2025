@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Script Loading Test</title>
+  <script>
+    console.log("🔹 <script> in <head> - Blocking");
+  </script>
+  <script src="script-async.js" async></script>
+  <script src="script-defer.js" defer></script>
+</head>
+<body>
+  <h1>Script Loading Test</h1>
+  <p>Check the console for execution order.</p>
+
+  <script>
+    console.log("🔸 <script> in <body> - Executed immediately");
+  </script>
+</body>
+</html>
